@@ -1,7 +1,6 @@
 <img align="center" alt="CSS" height="60" width="180" src="https://essa.prozeducacao.com.br/img/logo-proz.png">
 <img align="center" alt="CSS" height="60" width="80" src="https://www.svgrepo.com/show/452091/python.svg">
-Trabalho Extra - Proz - T24
-Jogo Caça-Minas em Pythjon:
+Trabalho Extra - Proz - T24 - Jogo Caça-Minas em Pythjon:
 
 -Jogo Caça-Minas traddicional.
 
