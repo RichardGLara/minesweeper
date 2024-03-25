@@ -26,9 +26,9 @@ def welcome():
 
 os.system('cls' if os.name == 'nt' else 'clear')
 name = input(f"\n\n\t\tWhat´s your name: \n\t\t\t:>").title()
-num_col = int(input(f"\t\tQual será o número de colunas?\b\t\t: "))
-num_row = int(input(f"\t\tQual será o número de linhas?\b\t\t: "))
-num_mine = int(input(f"\t\tQual será o número de bombas\b\t\t: "))
+num_col = int(input(f"\t\tWhat will be the number of columns?\b\t\t: "))
+num_row = int(input(f"\t\tWhat will be the number of lines?\b\t\t: "))
+num_mine = int(input(f"\t\tHow many mines will there be?\b\t\t\t: "))
 
 def create_board(rows, cols, mines):
     board = [["  " for _ in range(cols)] for _ in range(rows)]
@@ -88,14 +88,20 @@ def main():
 
         if board[row][col] == 'o*':
             print('Game Over! You hit a mine.')
+            os.system('cls' if os.name == 'nt' else 'clear')
             break
 
         revealed[row][col] = count_adjacent_mines(row, col, board)
-        time.sleep(5)
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("MENSAGEM DO PERDEDOR")
+        print("LOOSER MESSAGE...")
 
-    print('Game over! Here is the complete board:')
     display_board(board)
+    print(f"\t\tGame over! Here is the complete board:")
+    print(" _____ _            _____                           ")
+    print("|     |_|___ ___   |   __|_ _ _ ___ ___ ___ ___ ___ ")
+    print("| | | | |   | -_|  |__   | | | | -_| -_| . | -_|  _|")
+    print("|_|_|_|_|_|_|___|  |_____|_____|___|___|  _|___|_|  ")
+    print("                                       |_|          ")
+    print(f"\t\t{name}, you die!!!")
 
 main()
