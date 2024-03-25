@@ -11,3 +11,7 @@ Trabalho Extra - Proz - T24 - Jogo Caça-Minas em Pythjon:
 -Escolha do número de linhas e colunas
 
 -Escolha do número de minas, escondidas de forma aleatória, pelo código
+
+![](https://github.com/RichardGLara/minesweeper/blob/main/pic01.png)
+![](https://github.com/RichardGLara/minesweeper/blob/main/pic02.png)
+![](https://github.com/RichardGLara/minesweeper/blob/main/pic03.png)
